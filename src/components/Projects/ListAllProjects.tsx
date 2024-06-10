@@ -86,6 +86,43 @@ const ProjectList = ({ darkMode }: { darkMode: boolean }) => {
             link: "https://chatur-89782.web.app/",
             github: ["https://github.com/DcaseMhrz/Chatur"]
         },
+        {
+            title: "NewsTurtle - News App",
+            images: [
+                "/projects/newsturtle/1.png",
+                "/projects/newsturtle/2.png",
+                "/projects/newsturtle/3.png",
+                "/projects/newsturtle/4.png",
+            ],
+            type: "News Web application | SAAS Application | Full stack ",
+            link: "https://newsturtle.vercel.app/",
+            github: ["https://github.com/DcaseMhrz/newsturtle"]
+        },
+        {
+            title: "iNotebook - Notebook App",
+            images: [
+                "/projects/inotebook/1.png",
+                "/projects/inotebook/2.png",
+                "/projects/inotebook/3.png",
+                "/projects/inotebook/4.png",
+            ],
+            type: "iNotebook - Simple Note taking app  | SAAS Application | Full stack ",
+            link: "https://inotebook-44c45.web.app/",
+            github: ["https://github.com/DcaseMhrz/iNotebook","https://github.com/DcaseMhrz/iNotebookAPIserver"]
+        },
+        {
+            title: "GosuApp - Betting Script",
+            images: [
+                "/projects/gosudata/1.png",
+                "/projects/gosudata/2.png",
+                "/projects/gosudata/3.png",
+                "/projects/gosudata/4.png",
+                "/projects/gosudata/5.png",
+            ],
+            type: "GosuApp - Bet Prediction Script  | Python | Script ",
+            link: "https://github.com/DcaseMhrz/GosuData",
+            github: ["https://github.com/DcaseMhrz/GosuData"]
+        },
     ];
 
     const handleImageClick = (projectIndex: number, imageIndex: number) => {

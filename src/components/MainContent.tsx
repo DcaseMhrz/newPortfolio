@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Homepage from "./Homepage";
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 
@@ -15,9 +15,15 @@ const MainContent: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   const location = useLocation();
   const isHomepage = location.pathname === "/";
 
+  const [isCopied, setIsCopied] = useState(false);
+
   const copyToClipboard = (text: string) => {
-    navigator.clipboard.writeText(text);
-    alert("Email copied to clipboard!");
+    navigator.clipboard.writeText(text).then(() => {
+      setIsCopied(true);
+      setTimeout(() => {
+        setIsCopied(false);
+      }, 2000); // Reset the button text after 2 seconds
+    });
   };
 
   return (
@@ -54,9 +60,12 @@ const MainContent: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
             <LuPhoneCall fontSize={20} className="mx-2" />
             Call me
           </a>
-          <button onClick={() => copyToClipboard('dcasemhrz@gmail.com')} className="border-2 border-gray-400 px-6 py-4 rounded-lg shadow-lg inline-flex items-center hover:bg-gray-300 dark:hover:bg-gray-700">
+          <button
+            onClick={() => { copyToClipboard('dcasemhrz@gmail.com') }}
+            className="border-2 border-gray-400 px-6 py-4 rounded-lg shadow-lg inline-flex items-center hover:bg-gray-300 dark:hover:bg-gray-700"
+          >
             <IoCopyOutline fontSize={20} className="mx-2" />
-            Copy email
+            {isCopied ? 'Copied ✔' : 'Copy email'}
           </button>
         </div>
         <div className="mx-4 flex space-x-4 p-4">
