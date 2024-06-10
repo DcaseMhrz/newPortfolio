@@ -183,7 +183,7 @@ const ProjectList = ({ darkMode }: { darkMode: boolean }) => {
                         </div>
                         <div className="flex items-center justify-between" key={projectIndex}>
                             <div className="flex flex-col">
-                                <span className="font-bold text-xl text-gray-700">{project.title}</span>
+                                <span className="font-bold text-xl text-gray-700 dark:text-gray-200">{project.title}</span>
                                 <span className="font-semibold text-sm text-gray-400">{project.type}</span>
                             </div>
                            {project.github[0] && <div className="flex items-center">
