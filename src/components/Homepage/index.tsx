@@ -125,17 +125,18 @@ const Homepage: React.FC<HomepageProps> = ({ darkMode }) => {
           <h3 className="text-2xl font-semibold dark:text-gray-200">
             My Expert Area
           </h3>
-          <a href="/skills" className="hover:underline text text-blue-500 mr-6">
+          <a href="/myskills" className="hover:underline text text-blue-500 mr-6">
             {" "}
             More services →
           </a>
         </div>
-        <div className="flex flex-wrap space-x-10 justify-center">
+        <div className="grid sm:grid-cols-1  md:grid-col-2 lg:grid-cols-4 justify-center">
           <div className="p-4 border-2 border-gray-300 dark:border-gray-600 rounded-2xl m-2">
             <div className="rounded-lg bg-gray-200 p-4 dark:bg-gray-700"><FaLaptopCode className="w-20 h-20 text-blue-600" /></div>
 
             <p className="mx-auto w-max font-semibold font-mono"> Full Stack</p>
           </div>
+          
           <div className="p-4 border-2 border-gray-300 dark:border-gray-600 rounded-2xl m-2">
             <div className="rounded-lg bg-gray-200 p-4 dark:bg-gray-700"><FaGears className="w-20 h-20 text-blue-600" /></div>
 

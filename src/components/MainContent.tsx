@@ -29,7 +29,7 @@ const MainContent: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   return (
     <main className={`grid grid-cols-1 lg:grid-cols-3 gap-6 mx-auto container max-w-7xl py-6`}>
       <div
-        className={`bg-white ${darkMode ? "dark:bg-gray-800 dark:text-gray-200" : ""} p-4 rounded-2xl shadow-lg col-span-1 lg:col-span-1 row-span-2 ${isHomepage ? "" : "sticky top-28"}`}
+        className={`bg-white ${darkMode ? "dark:bg-gray-800 dark:text-gray-200" : ""} p-4 rounded-2xl shadow-lg col-span-1 lg:col-span-1 row-span-2 lg:${isHomepage ? "" : "sticky top-28"}`}
       >
         <img
           src="/images.jpeg"
@@ -56,13 +56,13 @@ const MainContent: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
           of Experience.
         </p>
         <div className="flex justify-around my-4">
-          <a href="tel:0451784201" className="bg-blue-500 px-10 py-6 rounded-lg shadow-lg text-white inline-flex items-center hover:bg-blue-300 dark:hover:bg-blue-700">
+          <a href="tel:0451784201" className="bg-blue-500 px-1 py-1 md:px-10 md:py-6 rounded-lg shadow-lg text-white inline-flex items-center hover:bg-blue-300 dark:hover:bg-blue-700">
             <LuPhoneCall fontSize={20} className="mx-2" />
             Call me
           </a>
           <button
             onClick={() => { copyToClipboard('dcasemhrz@gmail.com') }}
-            className="border-2 border-gray-400 px-6 py-4 rounded-lg shadow-lg inline-flex items-center hover:bg-gray-300 dark:hover:bg-gray-700"
+            className="border-2 border-gray-400  px-1 py-1 md:px-6 md:py-4 rounded-lg shadow-lg inline-flex items-center hover:bg-gray-300 dark:hover:bg-gray-700"
           >
             <IoCopyOutline fontSize={20} className="mx-2" />
             {isCopied ? 'Copied ✔' : 'Copy email'}
@@ -83,8 +83,8 @@ const MainContent: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       <Routes>
         <Route path="/" element={<Homepage darkMode={darkMode} />} />
         <Route path="/about" element={<About darkMode={darkMode} />} />
-        <Route path="/skills" element={<Skills darkMode={darkMode} />} />
-        <Route path="/projects" element={<Projects darkMode={darkMode} />} />
+        <Route path="/myskills" element={<Skills darkMode={darkMode} />} />
+        <Route path="/myprojects" element={<Projects darkMode={darkMode} />} />
       </Routes>
     </main>
   );

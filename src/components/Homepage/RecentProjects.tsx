@@ -69,7 +69,7 @@ const RecentProjects = ({ darkMode }: { darkMode: boolean }) => {
         <h3 className="text-2xl font-semibold dark:text-gray-200">
           Recent Projects
         </h3>
-        <a href="/projects" className="text-blue-500 hover:underline mr-6">
+        <a href="/myprojects" className="text-blue-500 hover:underline mr-6">
           All Projects →
         </a>
       </div>

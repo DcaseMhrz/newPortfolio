@@ -8,7 +8,7 @@ const About: React.FC<props> = ({ darkMode }) => {
     return (<>
         <div
             className={`bg-white ${darkMode ? "dark:bg-gray-800 dark:text-gray-200" : ""
-                } p-4 rounded-2xl col-span-2 lg:col-span-2 row-span-10 shadow-lg`}
+                } p-4 rounded-2xl col-span-1 lg:col-span-2 row-span-10 shadow-lg`}
         >
 
             <div className="flex">

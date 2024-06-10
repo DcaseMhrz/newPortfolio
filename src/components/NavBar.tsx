@@ -49,7 +49,7 @@ const NavBar: React.FC<NavBarProps> = ({ darkMode, toggleDarkMode }) => {
         </div>
         <div className="hover:bg-slate-300 box-content p-2 rounded-lg">
           <a
-            href="/skills"
+            href="/myskills"
             className="text-gray-500 font-semibold flex space-x-2 items-center"
           >
             <RiStackLine fontSize={20} /> <p>Skills</p>
@@ -57,7 +57,7 @@ const NavBar: React.FC<NavBarProps> = ({ darkMode, toggleDarkMode }) => {
         </div>
         <div className="hover:bg-slate-300 box-content p-2 rounded-lg">
           <a
-            href="/projects"
+            href="/myprojects"
             className="text-gray-500 font-semibold flex space-x-2 items-center"
           >
             <TbCards fontSize={20} /> <p>Projects</p>
@@ -133,7 +133,7 @@ const NavBar: React.FC<NavBarProps> = ({ darkMode, toggleDarkMode }) => {
             </div>
             <div className="hover:bg-slate-300 box-content p-2 rounded-lg">
               <a
-                href="/skills"
+                href="/myskills"
                 className="text-gray-500 font-semibold flex space-x-6 items-center"
               >
                 <RiStackLine fontSize={20} /> <p>Skills</p>
@@ -141,7 +141,7 @@ const NavBar: React.FC<NavBarProps> = ({ darkMode, toggleDarkMode }) => {
             </div>
             <div className="hover:bg-slate-300 box-content p-2 rounded-lg">
               <a
-                href="/projects"
+                href="/myprojects"
                 className="text-gray-500 font-semibold flex space-x-6 items-center"
               >
                 <TbCards fontSize={20} /> <p>Projects</p>

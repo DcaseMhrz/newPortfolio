@@ -44,7 +44,7 @@ interface props {
 
 const Skills: React.FC<props> = () => {
     return (
-        <div className=" p-4 col-span-2 bg-white row-span-4 rounded-2xl dark:bg-gray-800 dark:text-gray-200">
+        <div className=" p-4 col-span-1 bg-white row-span-4 lg:col-span-2 rounded-2xl dark:bg-gray-800 dark:text-gray-200">
 
             <div className="  flex justify-between space-x-12 p-4">
                 <h3 className="text-5xl font-semibold dark:text-gray-200 mb-4 ">
@@ -77,7 +77,7 @@ const Skills: React.FC<props> = () => {
                             My Expert Area
                         </h3>
                     </div>
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div className="grid grid-cols-1  md:grid-cols-3 lg:grid-cols-4 gap-4">
                         <div className="p-4 border-2 border-gray-300 dark:border-gray-600 rounded-2xl m-2">
                             <div className="rounded-lg bg-gray-200 p-4 dark:bg-gray-700"><FaLaptopCode className="w-20 h-20 text-blue-600" /></div>
 

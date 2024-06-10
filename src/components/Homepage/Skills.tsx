@@ -25,7 +25,7 @@ const SkillLogos: React.FC<props> = ({ darkMode }) => {
         <h3 className="text-2xl font-semibold dark:text-gray-200">
           Skills | Tools
         </h3>
-        <a href="/skills" className="text-blue-500 hover:underline mr-6">
+        <a href="/myskills" className="text-blue-500 hover:underline mr-6">
           All Skills →
         </a>
       </div>
