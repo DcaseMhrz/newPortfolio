@@ -39,17 +39,52 @@ const ProjectList = ({ darkMode }: { darkMode: boolean }) => {
         {
             title: "Sofitel Sydney Wentworth Hold for Collection APP ( SSWHFC )",
             images: [
-                "/projects/meydit/1.png",
-                "/projects/meydit/2.png",
-                "/projects/meydit/3.png",
-                "/projects/meydit/4.png",
-                "/projects/meydit/5.png",
-                "/projects/meydit/6.png",
-                "/projects/meydit/7.png",
+                "/projects/sswhfc/1.png",
+                "/projects/sswhfc/2.png",
+                "/projects/sswhfc/3.png",
+                "/projects/sswhfc/4.png",
+                "/projects/sswhfc/5.png",
+                "/projects/sswhfc/6.png",
+                "/projects/sswhfc/7.png",
+                "/projects/sswhfc/8.png",
             ],
             type: "SSW HFC | SAAS Application | Full stack | DevOps |  vercel",
             link: "https://sswhfc.vercel.app/",
             github: ["https://github.com/DcaseMhrz/frontend", "https://github.com/DcaseMhrz/backend"]
+        },
+        {
+            title: "King Fisher Global Web App",
+            images: [
+                "/projects/kingfisher/1.png",
+                "/projects/kingfisher/2.png",
+                "/projects/kingfisher/3.png",
+                "/projects/kingfisher/4.png",
+                "/projects/kingfisher/5.png",
+                "/projects/kingfisher/6.png",
+                "/projects/kingfisher/7.png",
+                "/projects/kingfisher/8.png",
+            ],
+            type: "Booking Web App | SAAS Application | Full stack ",
+            link: "https://kingfisherglobals.com/",
+            github: []
+        },
+        {
+            title: "Chatur Chat App",
+            images: [
+                "/projects/chatur/1.png",
+                "/projects/chatur/2.png",
+                "/projects/chatur/3.png",
+                "/projects/chatur/4.png",
+                "/projects/chatur/5.png",
+                "/projects/chatur/6.png",
+                "/projects/chatur/7.png",
+                "/projects/chatur/8.png",
+                "/projects/chatur/9.png",
+                "/projects/chatur/10.png",
+            ],
+            type: "Realtime Chat App | SAAS Application | Full stack ",
+            link: "https://chatur-89782.web.app/",
+            github: ["https://github.com/DcaseMhrz/Chatur"]
         },
     ];
 
