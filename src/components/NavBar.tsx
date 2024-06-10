@@ -76,14 +76,12 @@ const NavBar: React.FC<NavBarProps> = ({ darkMode, toggleDarkMode }) => {
             <FaMoon className="w-6 h-6" onClick={toggleDarkMode} />
           )}
         </div>
-        <div
+        <a
           className="bg-black text-white shadow-lg px-4 py-2 cursor-pointer rounded-md flex items-center space-x-2 hover:bg-gray-700"
-          onClick={() => {
-            alert("lets talk clicked");
-          }}
+          href="/contact"
         >
           <span className="text-gray-300">Let's talk</span> <SiMinutemailer />
-        </div>
+        </a>
       </div>
       <div
         className="lg:hidden md:flex cursor-pointer"
@@ -168,14 +166,13 @@ const NavBar: React.FC<NavBarProps> = ({ darkMode, toggleDarkMode }) => {
                 </p>
               )}
             </div>
-            <div
+            <a
+              href="/contact"
               className="bg-black text-white shadow-lg px-4 py-2 cursor-pointer rounded-md flex items-center space-x-2 hover:bg-gray-700 justify-center"
-              onClick={() => {
-                alert("lets talk clicked");
-              }}
             >
-              <span className="text-gray-300">Let's talk</span> <SiMinutemailer />
-            </div>
+              <span className="text-gray-300">Let's talk</span>{" "}
+              <SiMinutemailer />
+            </a>
           </div>
         </nav>
       </div>
