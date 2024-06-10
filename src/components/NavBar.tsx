@@ -6,6 +6,7 @@ import { TbCards } from "react-icons/tb";
 import { HiOutlineHome } from "react-icons/hi";
 import { MdWbSunny } from "react-icons/md";
 import { IoMdMenu } from "react-icons/io";
+import { SiMinutemailer } from "react-icons/si";
 
 interface NavBarProps {
   darkMode: boolean;
@@ -32,7 +33,7 @@ const NavBar: React.FC<NavBarProps> = ({ darkMode, toggleDarkMode }) => {
       <nav className="hidden lg:flex lg:space-x-16 space-x-8">
         <div className="hover:bg-slate-300 box-content p-2 rounded-lg">
           <a
-            href="#"
+            href="/"
             className="text-gray-500 font-semibold flex space-x-2 items-center"
           >
             <HiOutlineHome fontSize={20} /> <p>Home</p>
@@ -40,7 +41,7 @@ const NavBar: React.FC<NavBarProps> = ({ darkMode, toggleDarkMode }) => {
         </div>
         <div className="hover:bg-slate-300 box-content p-2 rounded-lg">
           <a
-            href="#"
+            href="/about"
             className="text-gray-500 font-semibold flex space-x-2 items-center"
           >
             <FaRegUser fontSize={20} /> <p>About</p>
@@ -48,7 +49,7 @@ const NavBar: React.FC<NavBarProps> = ({ darkMode, toggleDarkMode }) => {
         </div>
         <div className="hover:bg-slate-300 box-content p-2 rounded-lg">
           <a
-            href="#"
+            href="/skills"
             className="text-gray-500 font-semibold flex space-x-2 items-center"
           >
             <RiStackLine fontSize={20} /> <p>Skills</p>
@@ -56,10 +57,10 @@ const NavBar: React.FC<NavBarProps> = ({ darkMode, toggleDarkMode }) => {
         </div>
         <div className="hover:bg-slate-300 box-content p-2 rounded-lg">
           <a
-            href="#"
+            href="/projects"
             className="text-gray-500 font-semibold flex space-x-2 items-center"
           >
-            <TbCards fontSize={20} /> <p>Experience</p>
+            <TbCards fontSize={20} /> <p>Projects</p>
           </a>
         </div>
       </nav>
@@ -81,7 +82,7 @@ const NavBar: React.FC<NavBarProps> = ({ darkMode, toggleDarkMode }) => {
             alert("lets talk clicked");
           }}
         >
-          <span className="text-gray-300">Let's talk</span>
+          <span className="text-gray-300">Let's talk</span> <SiMinutemailer />
         </div>
       </div>
       <div
@@ -116,7 +117,7 @@ const NavBar: React.FC<NavBarProps> = ({ darkMode, toggleDarkMode }) => {
             </div>
             <div className="hover:bg-slate-300 box-content p-2 rounded-lg">
               <a
-                href="#"
+                href="/"
                 className="text-gray-500 font-semibold flex space-x-6 items-center"
               >
                 <HiOutlineHome fontSize={20} /> <p>Home</p>
@@ -124,7 +125,7 @@ const NavBar: React.FC<NavBarProps> = ({ darkMode, toggleDarkMode }) => {
             </div>
             <div className="hover:bg-slate-300 box-content p-2 rounded-lg">
               <a
-                href="#"
+                href="/about"
                 className="text-gray-500 font-semibold flex space-x-6 items-center"
               >
                 <FaRegUser fontSize={20} /> <p>About</p>
@@ -132,7 +133,7 @@ const NavBar: React.FC<NavBarProps> = ({ darkMode, toggleDarkMode }) => {
             </div>
             <div className="hover:bg-slate-300 box-content p-2 rounded-lg">
               <a
-                href="#"
+                href="/skills"
                 className="text-gray-500 font-semibold flex space-x-6 items-center"
               >
                 <RiStackLine fontSize={20} /> <p>Skills</p>
@@ -140,10 +141,10 @@ const NavBar: React.FC<NavBarProps> = ({ darkMode, toggleDarkMode }) => {
             </div>
             <div className="hover:bg-slate-300 box-content p-2 rounded-lg">
               <a
-                href="#"
+                href="/projects"
                 className="text-gray-500 font-semibold flex space-x-6 items-center"
               >
-                <TbCards fontSize={20} /> <p>Experience</p>
+                <TbCards fontSize={20} /> <p>Projects</p>
               </a>
             </div>
           </div>
@@ -173,7 +174,7 @@ const NavBar: React.FC<NavBarProps> = ({ darkMode, toggleDarkMode }) => {
                 alert("lets talk clicked");
               }}
             >
-              <span className="text-gray-300">Let's talk</span>
+              <span className="text-gray-300">Let's talk</span> <SiMinutemailer />
             </div>
           </div>
         </nav>
