@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Homepage from "./Homepage";
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import {  Routes, Route, useLocation } from 'react-router-dom';
 
 import { CiLinkedin } from "react-icons/ci";
 import { FaXTwitter } from "react-icons/fa6";

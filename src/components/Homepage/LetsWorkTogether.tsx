@@ -1,4 +1,4 @@
-import { GoDownload } from "react-icons/go"
+
 import { SiMinutemailer } from "react-icons/si"
 
 interface props{

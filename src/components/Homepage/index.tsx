@@ -7,7 +7,6 @@ import { FaGears } from "react-icons/fa6";
 import SkillLogos from "./Skills";
 import { IoIosCloudUpload } from "react-icons/io";
 import LetsWorkTogether from "./LetsWorkTogether";
-import { MdOutlineZoomOutMap } from "react-icons/md";
 import RecentProjects from "./RecentProjects";
 
 interface HomepageProps {

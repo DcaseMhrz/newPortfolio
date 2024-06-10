@@ -42,7 +42,7 @@ interface props {
     darkMode: boolean
 }
 
-const Skills: React.FC<props> = ({ darkMode }) => {
+const Skills: React.FC<props> = () => {
     return (
         <div className=" p-4 col-span-2 bg-white row-span-4 rounded-2xl dark:bg-gray-800 dark:text-gray-200">
 
