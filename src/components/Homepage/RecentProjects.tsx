@@ -1,11 +1,16 @@
 import { useState } from "react";
 import { MdOutlineZoomOutMap } from "react-icons/md";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const RecentProjects = ({ darkMode }: { darkMode: boolean }) => {
   const [fullScreenImage, setFullScreenImage] = useState<string | null>(null);
-  const [currentProjectIndex, setCurrentProjectIndex] = useState<number | null>(null);
-  const [currentImageIndex, setCurrentImageIndex] = useState<number | null>(null);
+  const [currentProjectIndex, setCurrentProjectIndex] = useState<number | null>(
+    null
+  );
+  const [currentImageIndex, setCurrentImageIndex] = useState<number | null>(
+    null
+  );
 
   const projects = [
     {
@@ -57,21 +62,26 @@ const RecentProjects = ({ darkMode }: { darkMode: boolean }) => {
   const handlePrevious = () => {
     if (currentProjectIndex !== null && currentImageIndex !== null) {
       const project = projects[currentProjectIndex];
-      const newIndex = (currentImageIndex - 1 + project.images.length) % project.images.length;
+      const newIndex =
+        (currentImageIndex - 1 + project.images.length) % project.images.length;
       setCurrentImageIndex(newIndex);
       setFullScreenImage(project.images[newIndex]);
     }
   };
 
   return (
-    <div className={`bg-white ${darkMode ? "dark:bg-gray-800 dark:text-gray-200" : ""} p-4 rounded-2xl col-span-1 lg:col-span-1 row-span-2 shadow-lg`}>
+    <div
+      className={`bg-white ${
+        darkMode ? "dark:bg-gray-800 dark:text-gray-200" : ""
+      } p-4 rounded-2xl col-span-1 lg:col-span-1 row-span-2 shadow-lg`}
+    >
       <div className="flex justify-between items-center">
         <h3 className="text-2xl font-semibold dark:text-gray-200">
           Recent Projects
         </h3>
-        <a href="/myprojects" className="text-blue-500 hover:underline mr-6">
+        <Link to="/myprojects" className="text-blue-500 hover:underline mr-6">
           All Projects →
-        </a>
+        </Link>
       </div>
       <div className="flex flex-col space-y-5 mt-4">
         {projects.map((project, projectIndex) => (
@@ -102,7 +112,11 @@ const RecentProjects = ({ darkMode }: { darkMode: boolean }) => {
           >
             <FaArrowLeft />
           </button>
-          <img src={fullScreenImage} className="max-w-7xl max-h-7xl" alt="Full Screen Project" />
+          <img
+            src={fullScreenImage}
+            className="max-w-7xl max-h-7xl"
+            alt="Full Screen Project"
+          />
           <button
             onClick={handleNext}
             className="absolute right-4 text-white text-3xl p-2 bg-black bg-opacity-50 rounded-full"

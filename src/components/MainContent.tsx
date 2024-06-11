@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Homepage from "./Homepage";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, Link } from "react-router-dom";
 
 import { CiLinkedin } from "react-icons/ci";
 import { FaXTwitter } from "react-icons/fa6";
@@ -34,8 +34,8 @@ const MainContent: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
       <div
         className={`bg-white ${
           darkMode ? "dark:bg-gray-800 dark:text-gray-200" : ""
-        } p-4 rounded-2xl shadow-lg col-span-1 lg:col-span-1 row-span-2 lg:${
-          isHomepage ? "" : "sticky top-28"
+        } p-4 rounded-2xl shadow-lg col-span-1 lg:col-span-1 row-span-2 ${
+          isHomepage ? "" : "lg:sticky lg:top-28"
         }`}
       >
         <img
@@ -63,13 +63,13 @@ const MainContent: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
           of Experience.
         </p>
         <div className="flex justify-around my-4">
-          <a
-            href="tel:0451784201"
+          <Link
+            to="tel:0451784201"
             className="bg-blue-500 px-1 py-1 md:px-10 md:py-6 rounded-lg shadow-lg text-white inline-flex items-center hover:bg-blue-300 dark:hover:bg-blue-700"
           >
             <LuPhoneCall fontSize={20} className="mx-2" />
             Call me
-          </a>
+          </Link>
           <button
             onClick={() => {
               copyToClipboard("dcasemhrz@gmail.com");
@@ -81,30 +81,30 @@ const MainContent: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
           </button>
         </div>
         <div className="mx-4 flex space-x-4 p-4">
-          <a
-            href="https://github.com/DcaseMhrz"
+          <Link
+            to="https://github.com/DcaseMhrz"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-lg items-center p-2 hover:bg-gray-400 border-2 border-gray-400"
           >
             <FiGithub fontSize={20} />
-          </a>
-          <a
-            href="https://x.com/DcaseMhrz"
+          </Link>
+          <Link
+            to="https://x.com/DcaseMhrz"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-lg items-center p-2 hover:bg-gray-400 border-2 border-gray-400"
           >
             <FaXTwitter fontSize={20} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/dikeshmaharjan/"
+          </Link>
+          <Link
+            to="https://www.linkedin.com/in/dikeshmaharjan/"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-lg items-center p-2 hover:bg-gray-400 border-2 border-gray-400"
           >
             <CiLinkedin fontSize={20} />
-          </a>
+          </Link>
         </div>
       </div>
       <Routes>

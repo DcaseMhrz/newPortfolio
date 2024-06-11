@@ -7,6 +7,7 @@ import { HiOutlineHome } from "react-icons/hi";
 import { MdWbSunny } from "react-icons/md";
 import { IoMdMenu } from "react-icons/io";
 import { SiMinutemailer } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 interface NavBarProps {
   darkMode: boolean;
@@ -15,6 +16,10 @@ interface NavBarProps {
 
 const NavBar: React.FC<NavBarProps> = ({ darkMode, toggleDarkMode }) => {
   const [open, setOpen] = useState(false);
+
+  const handleLinkClick = () => {
+    setOpen(false);
+  };
 
   return (
     <div
@@ -32,36 +37,40 @@ const NavBar: React.FC<NavBarProps> = ({ darkMode, toggleDarkMode }) => {
       </div>
       <nav className="hidden lg:flex lg:space-x-16 space-x-8">
         <div className="hover:bg-slate-300 box-content p-2 rounded-lg">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="text-gray-500 font-semibold flex space-x-2 items-center"
+            onClick={handleLinkClick}
           >
             <HiOutlineHome fontSize={20} /> <p>Home</p>
-          </a>
+          </Link>
         </div>
         <div className="hover:bg-slate-300 box-content p-2 rounded-lg">
-          <a
-            href="/about"
+          <Link
+            to="/about"
             className="text-gray-500 font-semibold flex space-x-2 items-center"
+            onClick={handleLinkClick}
           >
             <FaRegUser fontSize={20} /> <p>About</p>
-          </a>
+          </Link>
         </div>
         <div className="hover:bg-slate-300 box-content p-2 rounded-lg">
-          <a
-            href="/myskills"
+          <Link
+            to="/myskills"
             className="text-gray-500 font-semibold flex space-x-2 items-center"
+            onClick={handleLinkClick}
           >
             <RiStackLine fontSize={20} /> <p>Skills</p>
-          </a>
+          </Link>
         </div>
         <div className="hover:bg-slate-300 box-content p-2 rounded-lg">
-          <a
-            href="/myprojects"
+          <Link
+            to="/myprojects"
             className="text-gray-500 font-semibold flex space-x-2 items-center"
+            onClick={handleLinkClick}
           >
             <TbCards fontSize={20} /> <p>Projects</p>
-          </a>
+          </Link>
         </div>
       </nav>
       <div className="hidden lg:flex space-x-4 items-center">
@@ -76,12 +85,13 @@ const NavBar: React.FC<NavBarProps> = ({ darkMode, toggleDarkMode }) => {
             <FaMoon className="w-6 h-6" onClick={toggleDarkMode} />
           )}
         </div>
-        <a
+        <Link
           className="bg-black text-white shadow-lg px-4 py-2 cursor-pointer rounded-md flex items-center space-x-2 hover:bg-gray-700"
-          href="/contact"
+          to="/contact"
+          onClick={handleLinkClick}
         >
           <span className="text-gray-300">Let's talk</span> <SiMinutemailer />
-        </a>
+        </Link>
       </div>
       <div
         className="lg:hidden md:flex cursor-pointer"
@@ -114,36 +124,40 @@ const NavBar: React.FC<NavBarProps> = ({ darkMode, toggleDarkMode }) => {
               Maharjan
             </div>
             <div className="hover:bg-slate-300 box-content p-2 rounded-lg">
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="text-gray-500 font-semibold flex space-x-6 items-center"
+                onClick={handleLinkClick}
               >
                 <HiOutlineHome fontSize={20} /> <p>Home</p>
-              </a>
+              </Link>
             </div>
             <div className="hover:bg-slate-300 box-content p-2 rounded-lg">
-              <a
-                href="/about"
+              <Link
+                to="/about"
                 className="text-gray-500 font-semibold flex space-x-6 items-center"
+                onClick={handleLinkClick}
               >
                 <FaRegUser fontSize={20} /> <p>About</p>
-              </a>
+              </Link>
             </div>
             <div className="hover:bg-slate-300 box-content p-2 rounded-lg">
-              <a
-                href="/myskills"
+              <Link
+                to="/myskills"
                 className="text-gray-500 font-semibold flex space-x-6 items-center"
+                onClick={handleLinkClick}
               >
                 <RiStackLine fontSize={20} /> <p>Skills</p>
-              </a>
+              </Link>
             </div>
             <div className="hover:bg-slate-300 box-content p-2 rounded-lg">
-              <a
-                href="/myprojects"
+              <Link
+                to="/myprojects"
                 className="text-gray-500 font-semibold flex space-x-6 items-center"
+                onClick={handleLinkClick}
               >
                 <TbCards fontSize={20} /> <p>Projects</p>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="space-y-4 mt-auto">
@@ -166,13 +180,14 @@ const NavBar: React.FC<NavBarProps> = ({ darkMode, toggleDarkMode }) => {
                 </p>
               )}
             </div>
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="bg-black text-white shadow-lg px-4 py-2 cursor-pointer rounded-md flex items-center space-x-2 hover:bg-gray-700 justify-center"
+              onClick={handleLinkClick}
             >
               <span className="text-gray-300">Let's talk</span>{" "}
               <SiMinutemailer />
-            </a>
+            </Link>
           </div>
         </nav>
       </div>
