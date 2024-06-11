@@ -7,7 +7,7 @@ const Projects: React.FC<props> = ({ darkMode }) => {
   return (
     <>
       <div className="bg-white col-span-1 lg:col-span-2 row-span-3 rounded-2xl shadow-lg p-4 dark:bg-gray-800 dark:text-gray-200">
-        <div className="  flex justify-between space-x-12 p-4">
+        <div className=" flex flex-col md:flex-row justify-between p-4">
           <h3 className="text-4xl font-semibold dark:text-gray-200 mb-4 ">
             Check Out My{" "}
             <span className="text-blue-500 font-bold">Latest Projects</span>
