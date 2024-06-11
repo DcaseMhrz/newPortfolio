@@ -59,10 +59,6 @@ const ProjectList = ({ darkMode }: { darkMode: boolean }) => {
                 "/projects/kingfisher/2.png",
                 "/projects/kingfisher/3.png",
                 "/projects/kingfisher/4.png",
-                "/projects/kingfisher/5.png",
-                "/projects/kingfisher/6.png",
-                "/projects/kingfisher/7.png",
-                "/projects/kingfisher/8.png",
             ],
             type: "Booking Web App | SAAS Application | Full stack ",
             link: "https://kingfisherglobals.com/",
@@ -105,6 +101,7 @@ const ProjectList = ({ darkMode }: { darkMode: boolean }) => {
                 "/projects/inotebook/2.png",
                 "/projects/inotebook/3.png",
                 "/projects/inotebook/4.png",
+                "/projects/inotebook/5.png",
             ],
             type: "iNotebook - Simple Note taking app  | SAAS Application | Full stack ",
             link: "https://inotebook-44c45.web.app/",
@@ -187,13 +184,13 @@ const ProjectList = ({ darkMode }: { darkMode: boolean }) => {
                                 <span className="font-semibold text-sm text-gray-400">{project.type}</span>
                             </div>
                            {project.github[0] && <div className="flex items-center">
-                                <a href={`${project!.github![0]}`} className="text-blue-600 hover:underline"><BsBoxArrowUpRight />Github 1</a>
+                                <a href={`${project!.github![0]}`} target="_blank" className="text-blue-600 hover:underline"><BsBoxArrowUpRight />Github 1</a>
                             </div>}
                             {project.github[1] && <div className="flex items-center">
-                                <a href={`${project!.github![1]}`} className="text-blue-600 hover:underline"><BsBoxArrowUpRight />Github 2</a>
+                                <a href={`${project!.github![1]}`} target="_blank" className="text-blue-600 hover:underline"><BsBoxArrowUpRight />Github 2</a>
                             </div>}
                             <div className="flex items-center">
-                                <a href={`${project.link}`} className="text-blue-600 hover:underline"><BsBoxArrowUpRight />Visit Site</a>
+                                <a href={`${project.link}`} target="_blank" className="text-blue-600 hover:underline"><BsBoxArrowUpRight />Visit Site</a>
                             </div>
 
                         </div>
